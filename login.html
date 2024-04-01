@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="all">
+    <div class="container">
+      <div class="login">
+        <h2>Đăng Nhập</h2>
+        <p>Đăng nhập để sử dụng các tiện ích siêu việt của chúng tôi!</p>
+      </div>
+      <div class="input">
+        <input type="text" placeholder="Tên tài khoản" id="username">
+      </div>
+      <div class="input">
+        <input type="password" placeholder="Mật khẩu" id="password">
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="mycheckbox"> 
+        <label for="mycheckbox">Lưu lại thông tin cho lần đăng nhập sau</label>
+      </div>
+      <div class="dangnhap">
+        <button id="loginButton">Đăng Nhập</button>
+      </div>
+      <div class="cuoitrang">
+        <a href="">Chưa có tài khoản?</a>
+        <a href="">Quên mật khẩu?</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    var admin='admin'
+  var passadmin='admin'
+  var loginButton = document.getElementById("loginButton");
+  loginButton.addEventListener("click", function(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if (username===admin && password === passadmin) {
+        window.location.href='admin.html';
+        
+    }
+    else{
+        alert('Tên người dùng hoặc mật khẩu không đúng!')
+        console.log('10')
+    }
+  })
+
+  </script>
+  
+</body>
+</html>

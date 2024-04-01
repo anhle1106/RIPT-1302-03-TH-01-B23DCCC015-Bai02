@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý sinh viên</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quản lý sinh viên</h1>
+    <button id="addStudent" onclick="addStudent()">Thêm mới</button>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>MSV</th>
+          <th>Tên</th>
+          <th>Tuổi</th>
+          <th>Địa chỉ</th>
+          <th>SDT</th>
+          <th>Email</th>
+          <th>Lớp học</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody id="studentList">
+      </tbody>
+    </table>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
